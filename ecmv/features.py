@@ -28,11 +28,10 @@ class Features(Enum):
         The non-dimensional width of the rice grain. (Normalised by the image size)
     """
 
-    FName = 1
-    Class = 2
-    Length = 3
-    Width = 4
-    Perimeter = 5
+    Class = 1
+    Length = 2
+    Width = 3
+    Perimeter = 4
 
 
 def get_feature_names():

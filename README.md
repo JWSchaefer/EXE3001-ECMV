@@ -2,8 +2,7 @@
 
 Code for the EXE3002 - Classifiers and Machine Vision written assignment
 
-![Rice Image](https://github.com/JWSchaefer/EXE30001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg?raw=True)
-
+![Rice Image](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg?raw=True)
 
 ## Index
 
@@ -34,7 +33,7 @@ The aim is the maximise the performance of a 2 node ensamble decision tree clasi
 
 
 ```python
-classifier = DecisionTreeClassifier(max_depth=2)
+classifier = RandomForestClassifier(max_depth=2, n_estimators=100, random_state=42)
 ```
 
 This should be achieved by designing functions that accept a path to an image as the input and return a derived quantity as the output.
@@ -306,7 +305,7 @@ sample = ecmv.extract.test( # Apply function to a random image
   </tbody>
 </table>
 
-![Rice Image](https://github.com/JWSchaefer/EXE30001-RiceData/blob/main/Ipsala/Ipsala%20(9456).jpg?raw=True)
+![Rice Image](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Ipsala/Ipsala%20(9456).jpg?raw=True)
 
 ### Example 2 - Function Application
 
@@ -354,7 +353,7 @@ plt.show()
 $ python example_test.py
 ```
 **Output**
-![Pairplot](https://github.com/JWSchaefer/EXE30001-RiceData/blob/main/dist.png?raw=true)
+![Pairplot](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/dist.png?raw=true)
 
 ### Example 3 - Classification
 
@@ -373,7 +372,7 @@ from ecmv.features import Features
 
 from matplotlib import pyplot as plt
 
-from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
 
@@ -392,7 +391,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Train the 2 node ensemble decision tree clasifier on the training set
-classifier = DecisionTreeClassifier(max_depth=2, random_state=42)
+classifier = RandomForestClassifier(max_depth=2, n_estimators=100, random_state=42)
 classifier.fit(X_train, y_train)
 
 # Evalute the performance of the model on the test set
@@ -429,11 +428,10 @@ An Enum defining precalculated features
 
 ```python
 class Features(Enum):
-    FName     = 1
-    Class     = 2
-    Length    = 3
-    Width     = 4
-    Perimeter = 5
+    Class     = 1
+    Length    = 2
+    Width     = 3
+    Perimeter = 4
 ```
 
 **Attributes**
@@ -541,3 +539,4 @@ data : pd.Dataframe
 
 If you are struggling to use this code, please contact your supervisor.
 
+<img src="https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/rice.png?raw=True"  width="200"/>

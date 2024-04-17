@@ -7,7 +7,7 @@ MOD = "ecmv"
 
 class DSET:
     url = r"https://github.com/JWSchaefer/EXE3001-RiceData.git"
-    path = os.path.join(user_data_dir(MOD, "digiLab Solutions Ltd"))
+    path = os.path.join(user_data_dir(MOD))
 
 
 class CACHE:
