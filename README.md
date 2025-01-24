@@ -1,7 +1,7 @@
 # Exeter College Machine Vision 
 
 <p align="center">
-<img src="r[esources/fuel-cell.png](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg?raw=True)" width="160"/>
+<img src="r[esources/fuel-cell.png](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg)" width="160"/>
 </p>
 
 
