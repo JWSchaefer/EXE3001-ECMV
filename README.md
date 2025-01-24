@@ -277,7 +277,7 @@ from matplotlib import pyplot as plt
 def foo(path): # Test function
 
     with Image.open(path) as im: # Load image
-        im.show() # SHow it
+        im.show() 
 
     return 0.0 # Return a number
 
@@ -541,5 +541,3 @@ data : pd.Dataframe
 ## Support
 
 If you are struggling to use this code, please contact your supervisor.
-
-<img src="https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/rice.png?raw=True"  width="200"/>
