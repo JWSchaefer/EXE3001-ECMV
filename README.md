@@ -1,8 +1,11 @@
 # Exeter College Machine Vision 
 
-Code for the EXE3002 - Classifiers and Machine Vision written assignment
+<p align="center">
+<img src="r[esources/fuel-cell.png](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg?raw=True)" width="160"/>
+</p>
 
-![Rice Image](https://github.com/JWSchaefer/EXE3001-RiceData/blob/main/Jasmine/Jasmine%20(10070).jpg?raw=True)
+
+EXE3002 - Classifiers and Machine Vision Assignment
 
 ## Index
 
